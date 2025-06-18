@@ -16,7 +16,7 @@ export function Menu() {
         Projetos
       </a>
       <a href="/about" className={getClassName("/about")}>
-        About
+        Sobre
       </a>
     </div>
   );
