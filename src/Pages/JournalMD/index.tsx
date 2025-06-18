@@ -21,7 +21,7 @@ export function JournalMD() {
 
     const carregarArquivo = async () => {
       try {
-        const res = await fetch(`../../../public/${pwd}.md`);
+        const res = await fetch(`/${pwd}.md`);
         if (!res.ok) throw new Error("Arquivo não encontrado");
         const texto = await res.text();
         setContent(texto);
