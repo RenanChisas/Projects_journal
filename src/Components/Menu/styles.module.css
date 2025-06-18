@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border-bottom: 0.1px solid #59636e;
+  width: 100%;
+}
+
+.a {
+  text-decoration: none;
+  padding: 1rem;
+  color: #59636e;
+  border-bottom: 2px solid transparent;
+  font-size: 0.8rem;
+}
+
+.a:hover {
+  color: black;
+  border-bottom: 2px solid #59636e;
+}
+
+.active {
+  color: black;
+
+  border-bottom: 2px solid #004ea0;
+}

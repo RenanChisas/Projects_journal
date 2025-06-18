@@ -1,0 +1,39 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f8fa;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 1px solid #59636e;
+}
+
+.description {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.title a {
+  font-size: 1rem;
+  padding: 0;
+  border-color: transparent;
+  text-decoration: none;
+  color: #0969da;
+}
+.title a:hover {
+  font-size: 1rem;
+  color: #0969da;
+  text-decoration: dashed;
+  border-color: #0969da;
+}
+
+.title h5 {
+  margin-top: 0.3rem;
+  color: #52525b;
+}
+.p {
+  font-size: 0.9rem;
+  color: #52525b;
+}
