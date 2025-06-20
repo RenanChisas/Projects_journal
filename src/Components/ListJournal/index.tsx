@@ -9,11 +9,14 @@ type ListJournalProps = {
 export function ListJournal({ itens }: ListJournalProps) {
   return (
     <ul className={styles.ul}>
-      {itens.map((projeto, index) => (
-        <li className={styles.li} key={index}>
-          <ItemJournal {...projeto} />
-        </li>
-      ))}
+      {itens
+        .slice()
+        .reverse()
+        .map((projeto, index) => (
+          <li className={styles.li} key={index}>
+            <ItemJournal {...projeto} />
+          </li>
+        ))}
     </ul>
   );
 }
