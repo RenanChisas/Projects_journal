@@ -4,10 +4,14 @@ import { Menu } from "../../Components/Menu";
 import { Container } from "../../Components/Container";
 import "github-markdown-css/github-markdown-light.css";
 import styles from "./styles.module.css";
-import { listProjects } from "../../Types/bd";
+
+import data from "../../Types/bd.json";
+import type { ItemJournalType } from "../../Types/itensJournal";
+
 import { useSearchParams } from "react-router-dom";
 
 export function JournalMD() {
+    const listProjects = data as ItemJournalType[];
   const [searchParams] = useSearchParams();
   const [content, setContent] = useState("");
 
